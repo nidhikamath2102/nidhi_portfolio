@@ -1,0 +1,27 @@
+.color-app {
+    background-color: #1B1A1A;
+}
+
+.color-title1 {
+    color: #ffffff;
+}
+
+.color-title2 {
+    color: #534E4E;
+}
+
+.color-paragraph {
+    color: #FFFFFF;
+}
+
+.color-hover:hover {
+    background-color: #3A3A3A;
+}
+
+.color-chip-header {
+    color: #FFFFFF;
+}
+
+.color-chip-background {
+    background-color: #534E4E;
+}
