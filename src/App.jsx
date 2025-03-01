@@ -69,6 +69,10 @@ function App() {
           </section>
         </div>
       </div>
+
+      <footer className="w-full text-center p-4">
+        <p className="text-white">&copy; 2025 Nidhi Kamath. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
