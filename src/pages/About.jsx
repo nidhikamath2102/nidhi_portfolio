@@ -8,8 +8,8 @@ function About() {
      p-6">
       <Title title1={"Software"} title2={"Engineer"} />
 
-      <p className="color-paragraph mt-4">
-      I’m a dedicated software developer with a strong foundation in computer engineering and hands-on experience across mobile and web platforms. Currently pursuing my Master's in Computer Science & Applications at Virginia Tech, I’ve honed my skills through roles that emphasized innovative problem-solving—from refining real-time functionalities in mobile apps to leading teams in enhancing user experiences. I take pride in turning complex challenges into efficient, reliable solutions and continuously exploring new technologies to drive impactful results.
+      <p className="color-paragraph mt-4 custom-line-height">
+        I’m a dedicated software developer with a strong foundation in computer engineering and hands-on experience across mobile and web platforms. Currently pursuing my Master's in Computer Science & Applications at Virginia Tech, I’ve honed my skills through roles that emphasized innovative problem-solving—from refining real-time functionalities in mobile apps to leading teams in enhancing user experiences. I take pride in turning complex challenges into efficient, reliable solutions and continuously exploring new technologies to drive impactful results.
       </p>
 
       <div className="flex flex-wrap justify-center mt-4 ">

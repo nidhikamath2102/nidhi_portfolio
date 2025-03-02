@@ -22,7 +22,7 @@ function Timeline() {
             <div className="ml-8 flex-1">
               <div className="flex items-center justify-between flex-nowrap">
                 <h3 className="font-bold text-lg text-white flex whitespace-pre-line">{item.companyName}</h3>
-                <span className="mt-2 md:mt-0 px-4 py-1 bg-gray-100 border border-gray-300 rounded-full text-sm text-xs mr-15">
+                <span className="mt-2 md:mt-0 px-4 py-1 text-gray-400 border custom-border-color rounded-full text-sm text-xs whitespace-nowrap">
                   {item.employmentType}
                 </span>
               </div>
@@ -32,7 +32,7 @@ function Timeline() {
               <div className="text-gray-500 text-sm mt-1 italic">
                 {item.role}
               </div>
-              <p className="mt-2 text-gray-400">{item.description}</p>
+              <p className="mt-2 text-gray-400 timeline-line-height">{item.description}</p>
             </div>
           </div>
         ))}

@@ -3,6 +3,7 @@ import vticlogo from "../assets/vt_innovation_campus_logo.png";
 import truein from "../assets/truein.png";
 import densoft from "../assets/densoft.png";
 import bharatividyapeeth from "../assets/bharatividyapeeth.png";
+import byjus from "../assets/byjus.png";
 
 import jsLogo from "../assets/js.png";
 import reactLogo from "../assets/react.png";
@@ -50,9 +51,9 @@ export const timelineItems = [
       logo: vtlogo,
       companyName: "Virginia Tech",
       employmentType: "Full Time",
-      year: "August 2023 - May 2025",
+      year: "Aug 2023 - May 2025",
       role: "Student",
-      description: "Master's degree in Computer Science and Applications.Mobile Application Development, Web Application Development, Cloud Computing, Machine Learning, Information Visualization, Introduction to Artificial Intelligence, Introduction to Urban Computing, Ethics and Professionalism in Computer Science, Machine Learning with Big Data. GPA: 3.7/4",
+      description: "Master's degree in Computer Science and Applications. Mobile Application Development, Web Application Development, Cloud Computing, Machine Learning, Information Visualization, Introduction to Artificial Intelligence, Introduction to Urban Computing, Ethics and Professionalism in Computer Science, Machine Learning with Big Data. GPA: 3.74/4",
     },
     {
       logo: vtlogo,
@@ -95,42 +96,50 @@ export const timelineItems = [
       description: "Implemented a single-device login feature with Firebase to reduce simultaneous access by 40% while providing real-time notifications for active sessions. Developed a YouTube-like video player screen with a course playlist that resumes from the last viewed timestamp and supports full-screen mode, boosting course completion rates by 30%. Additionally, built a doctor appointment app using the Agora SDK for real-time video calling/chat and OneSignal for push notifications.",
     },
     {
+      logo: byjus,
+      companyName: "Byjus (The Learning App)",
+      employmentType: "Part Time",
+      year: "Jun 2018 - Sep 2018",
+      role: "Business Development Associate",
+      description: "Analysed aspirants learning needs for India’s most toughest UPSC exam, recommending appropriate products.",
+    },
+    {
       logo: bharatividyapeeth,
       companyName: "Bharati Vidyapeeth's College of Engineering for Women",
       employmentType: "Full Time",
-      year: "May 2019 - Oct 2020",
+      year: "Aug 2014 - May 2018",
       role: "Student",
-      description: "Implemented a single-device login feature with Firebase to reduce simultaneous access by 40% while providing real-time notifications for active sessions. Developed a YouTube-like video player screen with a course playlist that resumes from the last viewed timestamp and supports full-screen mode, boosting course completion rates by 30%. Additionally, built a doctor appointment app using the Agora SDK for real-time video calling/chat and OneSignal for push notifications.",
+      description: "Bachelor's degree in Computer Science and Engineering. Data Structure and Problem Solving, Object Oriented and Multicore Programming, Conmputer Graphics and Gaming, Database Management and System Applications, Software Engineering, Design and Analysis of Algorithms, Data Mining Technology and Applications.  CGPA: 8.45/10",
     },
 ];
 
 export const skills = [
   { name: "JavaScript", logo: jsLogo, color: "#F7DF1E" },
   { name: "React", logo: reactLogo, color: "#61DAFB" },
+  { name: "Python", logo: pythonLogo, color: "#3776AB" },
+  { name: "Firebase", logo: firebaseLogo, color: "#FFCA28" },
   { name: "Node.js", logo: nodeLogo, color: "#339933" },
   { name: "Flutter", logo: flutterLogo, color: "#02569B" },
   { name: "Dart", logo: dartLogo, color: "#0175C2" },
-  { name: "Python", logo: pythonLogo, color: "#3776AB" },
   { name: "Java", logo: javaLogo, color: "#007396" },
   { name: "Tailwind CSS", logo: tailwindLogo, color: "#38B2AC" },
   { name: "Android Studio", logo: androidStudioLogo, color: "#3DDC84" },
-  { name: "AWS", logo: awsLogo, color: "#FF9900" },
   { name: "Canva", logo: canvaLogo, color: "#00C4CC" },
   { name: "CSS", logo: cssLogo, color: "#1572B6" },
+  { name: "Notion", logo: notionLogo, color: "#FFFFFF" },
   { name: "Figma", logo: figmaLogo, color: "#F24E1E" },
-  { name: "Firebase", logo: firebaseLogo, color: "#FFCA28" },
   { name: "Git", logo: gitLogo, color: "#F05032" },
   { name: "Google Colab", logo: googlecolabLogo, color: "#F9AB00" },
-  { name: "HTML", logo: htmlLogo, color: "#E34F26" },
+  { name: "VS Code", logo: vscodeLogo, color: "#007ACC" },
   { name: "IntelliJ IDEA", logo: intellijLogo, color: "#000000" },
+  { name: "AWS", logo: awsLogo, color: "#FF9900" },
   { name: "Kotlin", logo: kotlinLogo, color: "#0095D5" },
   { name: "MongoDB", logo: mongodbLogo, color: "#47A248" },
   { name: "MySQL", logo: mysqlLogo, color: "#4479A1" },
-  { name: "Next.js", logo: nextjsLogo, color: "#000000" },
-  { name: "Notion", logo: notionLogo, color: "#000000" },
-  { name: "PyCharm", logo: pycharmLogo, color: "#21D789" },
-  { name: "VS Code", logo: vscodeLogo, color: "#007ACC" },
   { name: "Xcode", logo: xcodeLogo, color: "#1575F9" },
+  { name: "Next.js", logo: nextjsLogo, color: "#666666" },
+  { name: "PyCharm", logo: pycharmLogo, color: "#21D789" },
+  { name: "HTML", logo: htmlLogo, color: "#E34F26" },
 ];
 
 export const projects = [

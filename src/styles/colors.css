@@ -25,3 +25,12 @@
 .color-chip-background {
     background-color: #534E4E;
 }
+
+:root {
+    --color-resume-1: color-app;
+    --color-resume-2: color-app;
+}
+
+.custom-border-color {
+    border-color: #373737; /* Replace with your desired color */
+}

@@ -35,14 +35,14 @@ function App() {
 
       <div className="flex flex-col w-full max-w-7xl mt-32">
         <div className="w-full flex flex-col justify-center items-center">
-        <h1 className="text-6xl font-bold text-white mt-4 animate-fade-in">Nidhi Kamath</h1>
+        <h1 className="text-6xl font-bold text-gradient mt-4 animate-fade-in">Nidhi Kamath</h1>
           <img
             src={profileImage}
             alt="Nidhi Kamath"
             className="rounded-full object-cover w-80 h-80 md:w-80 md:h-80 relative z-10"
           />
           <div className="mt-12 inline-block p-5" onClick={handleDownload}>
-            <button className="w-full px-20 py-3 bg-gradient-to-r from-[#2C1212] to-[#5F4E4E] text-white rounded-full animate-glow text-center hover:bg-gradient-to-r hover:from-[#5F4E4E] hover:to-[#2C1212] transition duration-300 ease-in-out">
+            <button className="w-full px-20 py-3 bg-gradient-to-r from-[var(--color-resume-1)] to-[var(--color-resume-2)] text-white rounded-full animate-glow text-center hover:bg-gradient-to-r hover:from-[#5F4E4E] hover:to-[#2C1212] transition duration-300 ease-in-out">
               Resume
             </button>
           </div>

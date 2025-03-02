@@ -13,3 +13,32 @@
 .animate-glow {
   animation: glow 1.5s infinite alternate;
 }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #ffcfcf, #fdabc7, #f3c4ff, #845ef7, #adbeff, #9bd2ff, #22b8cf, #d7fbf1, #a2e9f9, #2dd2d8, #fdf6e3, #ffb978);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient 5s ease infinite;
+}
+
+.custom-line-height {
+  line-height: 2;
+}
+
+.timeline-line-height {
+  line-height: 1.6;
+}
