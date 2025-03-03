@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import Title from "../components/title";
 import emailjs from "emailjs-com";
 
+import emailIcon from "../assets/email.png";
+import phoneIcon from "../assets/call.png";
+import locationIcon from "../assets/location.png";
+
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -48,67 +52,84 @@ function Contact() {
   return (
     <div className="w-full flex flex-col justify-center items-center p-6">
       <Title title1={"Let's Work"} title2={"Together"} />
-      <form onSubmit={handleSubmit} className="w-full max-w-lg mt-8">
-        <div className="mb-6">
-          <label
-            className="block text-gray-500 text-sm font-semibold mb-2"
-            htmlFor="name"
-          >
-            Name
-          </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-200"
-            required
-          />
+      <div className="w-full max-w-4xl mt-8 flex flex-col lg:flex-row">
+        <div className="w-full max-w-lg mt-8 p-6 rounded-lg shadow-lg">
+        <h2 className="text-3xl text-white font-semibold mb-6 animate-bounce">Get in touch with me!</h2>
+          <div className="flex items-center text-white mb-8 mt-8">
+            <img src={emailIcon} alt="Email" className="mr-4 h-10 w-10" />
+            <span className="text-sm lg:text-2xl text-gray-400">nidhigovindrayak@gmail.com</span>
+          </div>
+          <div className="flex items-center text-white mb-8">
+            <img src={phoneIcon} alt="Phone" className="mr-4 h-10 w-10" />
+            <span className="text-sm lg:text-2xl text-gray-400">+15712440881</span>
+          </div>
+          <div className="flex items-center text-white mb-8">
+            <img src={locationIcon} alt="Location" className="mr-4 h-10 w-10" />
+            <span className="text-sm lg:text-2xl text-gray-400">Falls Church, Virginia</span>
+          </div>
         </div>
-        <div className="mb-6">
-          <label
-            className="block text-gray-500 text-sm font-semibold mb-2"
-            htmlFor="email"
-          >
-            Email
-          </label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-200"
-            required
-          />
-        </div>
-        <div className="mb-6">
-          <label
-            className="block text-gray-500 text-sm font-semibold mb-2"
-            htmlFor="message"
-          >
-            Message
-          </label>
-          <textarea
-            name="message"
-            id="message"
-            value={formData.message}
-            onChange={handleChange}
-            className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-200"
-            rows="5"
-            required
-          />
-        </div>
-        <div className="flex items-center justify-center">
-          <button
-            type="submit"
-            className="bg-blue-900 hover:bg-gray-800 text-white font-semibold py-2 px-6 rounded-lg shadow transform hover:scale-105 transition duration-200"
-          >
-            Send Message
-          </button>
-        </div>
-      </form>
+        <form onSubmit={handleSubmit} className="w-full max-w-lg mt-8">
+          <div className="mb-6">
+            <label
+              className="block text-gray-500 text-sm font-semibold mb-2"
+              htmlFor="name"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-200"
+              required
+            />
+          </div>
+          <div className="mb-6">
+            <label
+              className="block text-gray-500 text-sm font-semibold mb-2"
+              htmlFor="email"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-200"
+              required
+            />
+          </div>
+          <div className="mb-6">
+            <label
+              className="block text-gray-500 text-sm font-semibold mb-2"
+              htmlFor="message"
+            >
+              Message
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              value={formData.message}
+              onChange={handleChange}
+              className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-200"
+              rows="5"
+              required
+            />
+          </div>
+          <div className="flex items-center justify-center">
+            <button
+              type="submit"
+              className="bg-blue-900 hover:bg-gray-800 text-white font-semibold py-2 px-6 rounded-lg shadow transform hover:scale-105 transition duration-200"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

@@ -40,12 +40,31 @@ import placeHolder from "../assets/placeholder.gif";
 
 export const navItems = ["About", "Experience", "Projects", "Contact"];
 
+// export const boxItems = [
+//     { color: "#35CDCB", text: "Flutter App Developer" },
+//     { color: "#C3CD35", text: "Designer" },
+//     { color: "#CD356A", text: "Web App Developer" },
+//     { color: "#65CD35", text: "Creator\n" },
+// ];
+
+// export const boxItems = [
+//   { color: "#35CDCB", text: "Flutter App Developer" },
+//   { color: "#CD356A", text: "Web App Developer" },
+//   { color: "#8A2BE2", text: "Full Stack Developer" },
+//   { color: "#A2B700", text: "Designer / Creator" },
+//   { color: "#FF5733", text: "Leader" },
+//   { color: "#1F618D", text: "Team Player" },
+// ];
+
 export const boxItems = [
-    { color: "#35CDCB", text: "Flutter App Developer" },
-    { color: "#C3CD35", text: "Designer" },
-    { color: "#CD356A", text: "Web App Developer" },
-    { color: "#65CD35", text: "Creator\n" },
+  { color: "#2A9FA1", text: "Flutter App Developer" },
+  { color: "#d7a578", text: "Web App Developer" },
+  { color: "#664999", text: "Full Stack Developer" },
+  { color: "#a0ae38", text: "Designer / Creator" },
+  { color: "#a33939", text: "Leader" },
+  { color: "#FF5733", text: "Team Player" }, // Brown
 ];
+
 export const timelineItems = [
     {
       logo: vtlogo,
