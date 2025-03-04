@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../components/title";
 import { projects } from "../data/data";
+import link from "../assets/link.png"; 
 
 function Projects() {
   return (
@@ -8,31 +9,24 @@ function Projects() {
       <Title title1={"My"} title2={"Projects"} />
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {projects.map((project, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden relative">
+          <div key={index} className="bg-color-app border border-[#6c757d] rounded-lg shadow-md overflow-hidden relative">
             <img
               src={project.image}
               alt={project.title}
               className="w-full h-36 object-cover"
             />
-            <div className="absolute top-2 right-2 bg-white rounded-full p-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 text-blue-500"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </div>
             <div className="p-4">
-              <h3 className="font-bold text-lg mb-1">{project.title}</h3>
-              <p className="text-gray-700 mb-2 text-sm">{project.description}</p>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="font-bold text-lg text-white ">{project.title}</h3>
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-2"
+                >
+                  <img src={link} alt="Link" className="w-6 h-6" />
+                </a>
+              </div>
               <div className="flex flex-wrap mb-2">
                 {project.skills.split(', ').map((skill, skillIndex) => (
                   <span
@@ -43,6 +37,8 @@ function Projects() {
                   </span>
                 ))}
               </div>
+              <hr className="border-[#6c757d] my-2" />
+              <p className="text-gray-400 text-sm leading-relaxed">{project.description}</p>
               <a
                 href={project.link}
                 target="_blank"
@@ -61,14 +57,14 @@ function Projects() {
 
 function getColorClass(index) {
   const colors = [
-    'bg-red-200',
-    'bg-green-200',
-    'bg-blue-200',
-    'bg-yellow-200',
-    'bg-purple-200',
-    'bg-pink-200',
-    'bg-indigo-200',
-    'bg-teal-200',
+    'bg-[#cdcdcd]',
+    'bg-[#a0f9a0]',
+    'bg-[#92c6f9]',
+    'bg-[#FFFFB3]',
+    'bg-[#bb9adb]',
+    'bg-[#f499c6]',
+    'bg-[#a37f7f]',
+    'bg-[#c78b54]',
   ];
   return colors[index % colors.length];
 }

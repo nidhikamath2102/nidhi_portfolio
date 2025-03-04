@@ -36,25 +36,7 @@ import askHokie from "../assets/ask_hokie.jpg";
 import bookStoreWebApp from "../assets/bookstore_web_app.png";
 import placeHolder from "../assets/placeholder.gif";
 
-
-
 export const navItems = ["About", "Experience", "Projects", "Contact"];
-
-// export const boxItems = [
-//     { color: "#35CDCB", text: "Flutter App Developer" },
-//     { color: "#C3CD35", text: "Designer" },
-//     { color: "#CD356A", text: "Web App Developer" },
-//     { color: "#65CD35", text: "Creator\n" },
-// ];
-
-// export const boxItems = [
-//   { color: "#35CDCB", text: "Flutter App Developer" },
-//   { color: "#CD356A", text: "Web App Developer" },
-//   { color: "#8A2BE2", text: "Full Stack Developer" },
-//   { color: "#A2B700", text: "Designer / Creator" },
-//   { color: "#FF5733", text: "Leader" },
-//   { color: "#1F618D", text: "Team Player" },
-// ];
 
 export const boxItems = [
   { color: "#2A9FA1", text: "Flutter App Developer" },
@@ -164,23 +146,23 @@ export const skills = [
 export const projects = [
   {
     title: "Ask Hokie (VT Hacks Hackathon)",
-    description: "The Virginia Tech chatbot serves as a virtual assistant designed to: •⁠ ⁠Provide instant answers to common questions related to admissions, campus facilities, academic programs, and events. •⁠ ⁠Assist with navigation around campus and offer information about departmental services. •⁠ ⁠Facilitate student engagement by offering details about extracurricular activities, clubs, and support services. •⁠ ⁠Provided responses for emergency response in case of natural calamities and criminal activities.",
+    description: "Ask Hokie is a virtual assistant designed to provide instant answers to questions about admissions, campus facilities, academic programs, and events. It helps users navigate the campus and find departmental services seamlessly. Additionally, it engages students by detailing extracurricular activities, clubs, support services, and offering emergency responses during crises.",
     link: "https://github.com/nidhikamath2102/hokie_plus_plus",
     skills: "React, HTML, CSS, JavaScript, MongoDB, RAG, LLM, BeautifulSoup",
     image: askHokie 
   },
   {
     title: "DoDEx (Bitcamp Hackathon)",
-    description: "DoDEx serves as an intelligent parser capable of automatically extracting key attributes, currently from Defense Contract Notices. It processes the notices to capture relevant information such as Federal Agency, Contract Amounts, Dates, Company Names, Locations and more. It then validates the information and gives us an accuracy for the information.",
+    description: "DoDEx is an intelligent parser that automatically extracts key attributes from Defense Contract Notices. It processes notices to capture essential details such as Federal Agency, Contract Amounts, Dates, Company Names, and Locations. Finally, it validates the data to provide an accuracy measure for the extracted information.",
     link: "https://github.com/nidhikamath2102/DoDEx",
-    skills: "Python, LLM, RAG, Selenium, BeautifulSoup",
+    skills: "Python, LLM, RAG, Selenium, BeautifulSoup, VS Code",
     image: placeHolder
   },
   {
     title: "Bookstore Web Application",
-    description: "This is a fullstack application for Bookstore and contains features like login, register, add to cart, checkout, view orders, view books, add books, delete books, update books, search books and transaction",
+    description: "The Bookstore Web Application is a full-stack platform designed to offer a seamless shopping experience. It supports secure user authentication, product browsing, cart management, checkout, and order tracking. Additionally, it provides administrative features for adding, updating, and deleting book listings.",
     link: "https://github.com/nidhikamath2102/NidhiBookstoreReact",
-    skills: "JavaScript, React, HTML, CSS, Java, MySQL, Figma",
+    skills: "React, HTML, CSS, JavaScript, Java, MySQL, Figma, Pycharm",
     image: bookStoreWebApp
   },
 ];
