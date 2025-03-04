@@ -29,8 +29,9 @@
 :root {
     --color-resume-1: color-app;
     --color-resume-2: color-app;
+    --color-resume-3: #2d2b2b;
 }
 
 .custom-border-color {
-    border-color: #373737;
+    border-color: #2c2828;
 }

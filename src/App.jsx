@@ -22,6 +22,7 @@ function App() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = resumeFile;
+    link.setAttribute("download", "Nidhi_Kamath_Resume.pdf");
     link.download = "Nidhi_Kamath_Resume.pdf";
     document.body.appendChild(link);
     link.click();
@@ -49,7 +50,7 @@ function App() {
             className="rounded-full object-cover w-80 h-80 md:w-80 md:h-80 relative z-8 mt-8"
           />
           <div className="mt-5 inline-block p-5" onClick={handleDownload}>
-            <button className="w-full px-20 py-3 bg-gradient-to-r from-[var(--color-resume-1)] to-[var(--color-resume-2)] text-white rounded-full animate-glow text-center hover:bg-gradient-to-r hover:from-[#5F4E4E] hover:to-[#2C1212] transition duration-300 ease-in-out">
+            <button className="w-full px-20 py-3 bg-gradient-to-r from-[var(--color-resume-1)] to-[var(--color-resume-2)] text-white rounded-full animate-glow text-center hover:bg-gradient-to-r hover:from-[var(--color-resume-3)] hover:to-[var(--color-resume-3)] transition duration-300 ease-in-out">
               Resume
             </button>
           </div>

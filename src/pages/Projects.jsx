@@ -31,7 +31,7 @@ function Projects() {
                 {project.skills.split(', ').map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className={`text-gray-800 text-xs font-semibold mr-1 mb-1 px-2 py-0.5 rounded ${getColorClass(skillIndex)}`}
+                    className={`text-gray-800 text-xs font-semibold mr-1 mb-2 px-2 py-0.5 rounded ${getColorClass(skillIndex)}`}
                   >
                     {skill}
                   </span>
