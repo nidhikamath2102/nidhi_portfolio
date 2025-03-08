@@ -71,7 +71,7 @@ function Contact() {
         <form onSubmit={handleSubmit} className="w-full max-w-lg mt-8">
           <div className="mb-6">
             <label
-              className="block text-gray-500 text-sm font-semibold mb-2"
+              className="block text-gray-300 text-sm font-semibold mb-2"
               htmlFor="name"
             >
               Name
@@ -82,16 +82,16 @@ function Contact() {
               id="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-200"
+              className="w-full px-4 py-3 border-4 border-purple-800 rounded-lg focus:outline-none focus:border-blue-400 transition duration-200"
               required
             />
           </div>
           <div className="mb-6">
             <label
-              className="block text-gray-500 text-sm font-semibold mb-2"
+              className="block text-gray-300 text-sm font-semibold mb-2"
               htmlFor="email"
             >
-              Email
+              Your Email
             </label>
             <input
               type="email"
@@ -99,13 +99,13 @@ function Contact() {
               id="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-200"
+              className="w-full px-4 py-3 border-4 border-purple-800 rounded-lg focus:outline-none focus:border-blue-400 transition duration-200"
               required
             />
           </div>
           <div className="mb-6">
             <label
-              className="block text-gray-500 text-sm font-semibold mb-2"
+              className="block text-gray-300 text-sm font-semibold mb-2"
               htmlFor="message"
             >
               Message
@@ -115,7 +115,7 @@ function Contact() {
               id="message"
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition duration-200"
+              className="w-full px-4 py-3 border-4 border-purple-800 rounded-lg focus:outline-none focus:border-blue-400 transition duration-200"
               rows="5"
               required
             />
@@ -123,7 +123,7 @@ function Contact() {
           <div className="flex items-center justify-center">
             <button
               type="submit"
-              className="bg-blue-900 hover:bg-gray-800 text-white font-semibold py-2 px-6 rounded-lg shadow transform hover:scale-105 transition duration-200"
+              className="bg-gradient-to-r from-purple-800 via-pink-800 to-red-900 hover:from-red-900 hover:via-pink-800 hover:to-purple-800 text-white font-semibold py-2 px-6 rounded-lg shadow transform hover:scale-105 transition duration-200"
             >
               Send Message
             </button>

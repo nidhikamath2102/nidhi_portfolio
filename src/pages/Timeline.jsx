@@ -5,7 +5,7 @@ import { timelineItems } from "../data/data";
 function Timeline() {
   return (
     <div className="w-full flex flex-col justify-center items-start p-6">
-      <Title title1={"My"} title2={"Timeline"} />
+      <Title title1={"My"} title2={"Experience"} />
       <div className="mt-8 relative w-full md:w-full lg:w-full">
         <div className="absolute top-0 left-6 h-full w-0.5 bg-gray-200"></div>
         {timelineItems.map((item, index) => (

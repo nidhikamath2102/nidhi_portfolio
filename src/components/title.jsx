@@ -7,7 +7,7 @@ function Title({ title1, title2 }) {
       <h1 className="flex-none w-auto text-6xl md:text-8xl font-bold animate-gradient lg:mr-4 pb-2">
         {title1}
       </h1>
-      <h1 className="flex-none w-auto text-6xl md:text-8xl font-bold animate-gradient-reverse pb-2">
+      <h1 className="flex-none w-auto text-6xl md:text-8xl font-bold animate-gradient-reverse pb-3">
         {title2}
       </h1>
     </div>
