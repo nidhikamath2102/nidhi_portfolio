@@ -155,7 +155,7 @@ export const projects = [
     title: "DoDEx (Bitcamp Hackathon)",
     description: "DoDEx is an intelligent parser that automatically extracts key attributes from Defense Contract Notices. It processes notices to capture essential details such as Federal Agency, Contract Amounts, Dates, Company Names, and Locations. Finally, it validates the data to provide an accuracy measure for the extracted information.",
     link: "https://github.com/nidhikamath2102/DoDEx",
-    skills: "Python, LLM, RAG, Selenium, BeautifulSoup JSON, Pandas, VS Code",
+    skills: "Python, LLM, RAG, Selenium, BeautifulSoup, JSON, Pandas, VS Code",
     image: placeHolder
   },
   {
