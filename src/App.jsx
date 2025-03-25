@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import "./styles/colors.css";
 import { navItems } from "./data/data";
+import { navIcons } from "./data/data";
 import profileImage from "./assets/nidhi.png";
 
 import instagramIcon from "./assets/instagram.png";
@@ -14,6 +15,7 @@ import About from "./pages/About";
 import Timeline from "./pages/Timeline";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import Designs from "./pages/Designs";
 import Certificates from "./pages/Certificates";
 import Contact from "./pages/Contact";
 import resumeFile from "./assets/Nidhi_Kamath.pdf";
@@ -31,12 +33,23 @@ function App() {
   return (
     <div className="min-h-screen color-app flex flex-col items-center justify-center p-4 md:p-6 overflow-x-hidden">
       <header className="fixed top-0 left-0 right-0 flex justify-center space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-10 p-6 z-10 bg-white shadow-md color-app">
-        {navItems.map((item) => (
+        {/* {navItems.map((item) => (
           <a
             key={item}
             href={`#${item.toLowerCase()}`}
             className="px-3 py-1 md:px-8 color-chip-background rounded-[20px] color-chip-header cursor-pointer color-hover transition">
             {item}
+          </a>
+        ))} */}
+        {navItems.map((item) => (
+          <a
+            key={item}
+            href={`#${item.toLowerCase()}`}
+            title={item}
+            className="px-3 py-1 md:px-8 color-chip-background rounded-[20px] color-chip-header cursor-pointer color-hover transition flex items-center justify-center "
+          >
+            <span className="w-6 h-6 sm:hidden flex items-center justify-center">{navIcons[item]}</span>
+            <span className="hidden sm:inline flex items-center justify-center">{item}</span>
           </a>
         ))}
       </header>
@@ -68,6 +81,9 @@ function App() {
           </section>
           <section id="projects" className="w-full mt-10 pt-16 -mt-16">
             <Projects />
+          </section>
+          <section id="designs" className="w-full mt-10 pt-16 -mt-16">
+            <Designs />
           </section>
           {/* <section id="certificates" className="w-full mt-10 pt-16 -mt-16">
             <Certificates />
