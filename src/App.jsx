@@ -18,7 +18,7 @@ import Projects from "./pages/Projects";
 import Designs from "./pages/Designs";
 import Certificates from "./pages/Certificates";
 import Contact from "./pages/Contact";
-import resumeFile from "./assets/Nidhi_Kamath.pdf";
+import resumeFile from "./assets/Nidhi_Kamath_Resume.pdf";
 
 function App() {
   const handleDownload = () => {
@@ -60,7 +60,7 @@ function App() {
           <img
             src={profileImage}
             alt="Nidhi Kamath"
-            className="rounded-full object-cover w-80 h-80 md:w-80 md:h-80 relative z-8 mt-8"
+           className="object-cover w-80 h-80 md:w-80 md:h-80 relative z-8 mt-8"
           />
           <div className="mt-5 inline-block p-5" onClick={handleDownload}>
             <button className="w-full px-20 py-3 bg-gradient-to-r from-[var(--color-resume-1)] to-[var(--color-resume-2)] text-white rounded-full animate-glow text-center hover:bg-gradient-to-r hover:from-[var(--color-resume-3)] hover:to-[var(--color-resume-3)] transition duration-300 ease-in-out">

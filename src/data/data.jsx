@@ -34,6 +34,8 @@ import xcodeLogo from "../assets/xcode.png";
 
 import askHokie from "../assets/ask_hokie.jpg";
 import bookStoreWebApp from "../assets/bookstore_web_app.png";
+import lifexai from "../assets/lifexai.png"
+import upassmanager from "../assets/upassmanager.png"
 import placeHolder from "../assets/placeholder.gif";
 
 import { FaUser, FaBriefcase, FaTools, FaLaptopCode, FaPalette, FaEnvelope } from 'react-icons/fa';
@@ -67,14 +69,16 @@ export const timelineItems = [
       year: "Aug 2023 - May 2025",
       role: "Student",
       description: "Master's degree in Computer Science and Applications. Mobile Application Development, Web Application Development, Cloud Computing, Machine Learning, Information Visualization, Introduction to Artificial Intelligence, Introduction to Urban Computing, Ethics and Professionalism in Computer Science, Machine Learning with Big Data. GPA: 3.74/4",
+      category: "education",
     },
     {
       logo: vtlogo,
       companyName: "Virginia Tech",
       employmentType: "Part Time",
-      year: "Feb 2024 - Present",
+      year: "Feb 2024 - Apr 2025",
       role: "Outreach Assistant",
       description: "Planned and executed engaging campus events to boost student participation. Designed flyers that effectively communicated event details to the student community. Coordinated all event logistics and collaborated with teams to ensure seamless organization. Maintained a positive and professional demeanor, ensuring every detail was perfectly managed.",
+      category: "campus",
     },
     {
       logo: vticlogo,
@@ -83,6 +87,7 @@ export const timelineItems = [
       year: "Jun 2024 - Feb 2025",
       role: "Admissions Assistant",
       description: "Assisted both international and domestic students with admissions queries, ensuring a smooth application process. Managed research projects including compiling college newsletters and conducted extensive research to identify prospective colleges and evaluate their academic programs for targeted partnership initiatives. Demonstrated strong management, coordination, and communication skills in a fast-paced, dynamic environment.",
+      category: "campus",
     },
     {
       logo: vtlogo,
@@ -91,6 +96,7 @@ export const timelineItems = [
       year: "Aug 2024 - Jan 2025",
       role: "Student Assistant",
       description: "Assisted students at the front desk, providing guidance on library services and addressing inquiries efficiently. Managed book check-outs for patrons, ensuring accurate record-keeping and a smooth circulation process. Coordinated planning for game nights and other events, fostering a welcoming and engaging community atmosphere.",
+      category: "campus",
     },
     {
       logo: truein,
@@ -98,7 +104,16 @@ export const timelineItems = [
       employmentType: "Full Time",
       year: "Oct  2020 - Jul 2023",
       role: "Software Engineer",
-      description: "Refined real-time location fetching using the geolocator plugin to boost GPS accuracy by 31% and retain a major client, re-engineered Flutter’s camera plugin to cut crashes by 54%, and introduced a standby mode for Contactless Face Stream that reduced battery consumption by 25%. Leading a team of two, I revamped the Truein User and Kiosk App with strategic UI enhancements for seamless user experiences. Additionally, I developed an offline backup feature that preserved 95% of attendance data locally, integrated a REST API using the BLoC pattern to improve data fetch efficiency by 40%, optimized SQLite database operations with raw SQL and JSON serialization for a 60% performance gain, and implemented JWT authentication to reduce unauthorized access attempts by 90%.",
+      description: [
+        "Led end-to-end software development lifecycle, at the B2B SaaS startup, scaling product users from a few hundred to 300K.",
+        "Directed migration of two applications to a cross-platform architecture, adopted by 500+ large enterprise clients.",
+        "Guided 2 engineers and collaborated directly with the co-founder on the strategic revamp of UI/UX of core applications.",
+        "Re-engineered critical application plugin, reducing system crashes by 54% as monitored by the Firebase Crashlytics console.",
+        "Developed an offline backup solution by managing SQLite operations and JSON serialization, with an option to sync them to MySQL database, preserving 95% of attendance data locally, and enhancing system resilience by 60%.",
+        "Refined real-time location data fetching via algorithm optimization, improving accuracy by 31% and retaining a major client.",
+        "Delivered 30+ major features through agile processes, secured Node.js APIs with JWT (JSON Web Token), reducing unauthorized access by 90% and integrated frontend APIs using BLoC/Riverpod, boosting efficiency by 40%."
+      ],
+      category: "industry",
     },
     {
       logo: densoft,
@@ -106,7 +121,14 @@ export const timelineItems = [
       employmentType: "Full Time",
       year: "Mar 2019 - Oct 2020",
       role: "Android App Developer",
-      description: "Implemented a single-device login feature with Firebase to reduce simultaneous access by 40% while providing real-time notifications for active sessions. Developed a YouTube-like video player screen with a course playlist that resumes from the last viewed timestamp and supports full-screen mode, boosting course completion rates by 30%. Additionally, built a doctor appointment app using the Agora SDK for real-time video calling/chat and OneSignal for push notifications.",
+      description: [
+        "Worked on multiple applications from scratch across diverse domains including EdTech, Healthcare and Finance, overseeing the full development lifecycle from requirements gathering and system design to successful production launch.",
+        "Designed multimedia streaming, location tracking and audio/video calling features, using Java, driving engagement by 60%.",
+        "Implemented push notification using OneSignal, significantly improving user interaction and communication efficiency.",
+        "Enhanced offline data access, introduced multilingual UI and integrated appointment scheduling feature with deep linking.",
+        "Built user authentication for secure login using Firebase, refining concurrent session handling by 80%."
+      ],
+      category: "industry",
     },
     {
       logo: byjus,
@@ -115,6 +137,7 @@ export const timelineItems = [
       year: "Jun 2018 - Sep 2018",
       role: "Business Development Associate",
       description: "Analysed aspirants learning needs for India’s most toughest UPSC exam, recommending appropriate products.",
+      category: "education",
     },
     {
       logo: bharatividyapeeth,
@@ -123,6 +146,7 @@ export const timelineItems = [
       year: "Aug 2014 - May 2018",
       role: "Student",
       description: "Bachelor's degree in Computer Science and Engineering. Data Structure and Problem Solving, Object Oriented and Multicore Programming, Conmputer Graphics and Gaming, Database Management and System Applications, Software Engineering, Design and Analysis of Algorithms, Data Mining Technology and Applications.  CGPA: 8.45/10",
+      category: "education",
     },
 ];
 
@@ -157,6 +181,20 @@ export const skills = [
 
 export const projects = [
   {
+    title: "UPass Manager",
+    description: "This project is a cloud-based application that automates and streamlines the U-Pass card distribution process for colleges, replacing error-prone manual methods. It features secure access, real-time data validation, NFC/QR scanning, and automated notifications to ensure efficient and accurate management.",
+    link: "https://github.com/nidhikamath2102/upassmanager",
+    skills: "React, HTML, Tailwind CSS, JavaScript, MySQL, Next.js, AWS RDS, AWS S3, AWS SES, Figma, Recharts, NFC reader",
+    image: upassmanager 
+  },
+  {
+    title: "LifexAI (Bitcamp 2025 Hackathon)",
+    description: "It is a personal financial detective that analyzes spending patterns, detects anomalies, and provides actionable insights to improve your financial health, all with a user friendly interface.",
+    link: "https://github.com/nidhikamath2102/lifexai",
+    skills: "React, HTML, Tailwind CSS, JavaScript, MongoDB, Gemini, Cloudflare, Next.js, Vercel",
+    image: lifexai 
+  },
+  {
     title: "Ask Hokie (VT Hacks Hackathon)",
     description: "Ask Hokie is a virtual assistant designed to provide instant answers to questions about admissions, campus facilities, academic programs, and events. It helps users navigate the campus and find departmental services seamlessly. Additionally, it engages students by detailing extracurricular activities, clubs, support services, and offering emergency responses during crises.",
     link: "https://github.com/nidhikamath2102/hokie_plus_plus",
@@ -164,7 +202,7 @@ export const projects = [
     image: askHokie 
   },
   {
-    title: "DoDEx (Bitcamp Hackathon)",
+    title: "DoDEx (Bitcamp 2024 Hackathon)",
     description: "DoDEx is an intelligent parser that automatically extracts key attributes from Defense Contract Notices. It processes notices to capture essential details such as Federal Agency, Contract Amounts, Dates, Company Names, and Locations. Finally, it validates the data to provide an accuracy measure for the extracted information.",
     link: "https://github.com/nidhikamath2102/DoDEx",
     skills: "Python, LLM, RAG, Selenium, BeautifulSoup, JSON, Pandas, VS Code",
