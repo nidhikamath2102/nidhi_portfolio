@@ -20,6 +20,8 @@ import Certificates from "./pages/Certificates";
 import Contact from "./pages/Contact";
 import resumeFile from "./assets/Nidhi_Kamath_Resume.pdf";
 
+import Rain from "./components/Rain";
+
 function App() {
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -31,7 +33,9 @@ function App() {
     document.body.removeChild(link);
   };
   return (
-    <div className="min-h-screen color-app flex flex-col items-center justify-center p-4 md:p-6 overflow-x-hidden">
+    // <div className="min-h-screen color-app flex flex-col items-center justify-center p-4 md:p-6 overflow-x-hidden">
+    <div className="relative min-h-screen color-app flex flex-col items-center justify-start pt-24 p-4 md:p-6 overflow-x-hidden">
+      <Rain dropCount={80} />
       <header className="fixed top-0 left-0 right-0 flex justify-center space-x-2 sm:space-x-4 md:space-x-6 lg:space-x-10 p-6 z-10 bg-white shadow-md color-app">
         {/* {navItems.map((item) => (
           <a
